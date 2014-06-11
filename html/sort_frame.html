@@ -1,0 +1,117 @@
+<?php
+session_start();  
+
+$_SESSION['genre'] ="all";
+$_SESSION['sortby'] ="0";
+
+?>
+
+
+<!DOCTYPE html>
+<!--
+This piece of code is the genre bar down below. 
+It should sort by genres or by other means.
+
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+		<link href="../css/fonts.css" rel="stylesheet"  type="text/css" charset="utf-8" />
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+         <!--Using the Jquery UI to set the sort button interface-->
+        <script>
+            $(function() {
+                $("#radio" ).buttonset();
+                $("#sort_menu").buttonset();
+            });
+        </script>
+  
+    </head>
+    
+    <body>
+        
+        
+        <!--buttons for genres, idea is that pressing the button sends forward a variable for sort.php to check--> 
+        <form>
+            <div id="radio"> 
+                <input type="radio" id="radio1" name="radio" checked="checked"><label for="radio1">
+                    <a href="../php/sort.php?sort_value=all" target="sort_menu">ALL</a>
+                </label>
+               
+                <input type="radio" id="radio2" name="radio"><label for="radio2">
+                    <a href="../php/sort.php?sort_value=adventure" target="sort_menu">Adventure</a>
+                </label>
+                
+                <input type="radio" id="radio3" name="radio"><label for="radio3">
+                    <a href="../php/sort.php?sort_value=erotic" target="sort_menu">Erotic</a>
+                </label>
+            
+                <input type="radio" id="radio4" name="radio"><label for="radio4">
+                    <a href="../php/sort.php?sort_value=fairytale" target="sort_menu">Fairy Tale</a>
+                </label>
+            
+                <input type="radio" id="radio5" name="radio"><label for="radio5">
+                    <a href="../php/sort.php?sort_value=fantasy" target="sort_menu">Fantasy</a>
+                </label>
+                
+                   
+                <input type="radio" id="radio6" name="radio"><label for="radio6">    
+                    <a href="../php/sort.php?sort_value=horror" target="sort_menu">Horror</a>
+                </label>
+                
+                <input type="radio" id="radio7" name="radio"><label for="radio7">    
+                    <a href="../php/sort.php?sort_value=humor" target="sort_menu">Humor</a>
+                </label>
+                
+                <input type="radio" id="radio8" name="radio"><label for="radio8">
+                    <a href="../php/sort.php?sort_value=mystery" target="sort_menu">Mystery</a>
+                </label>                                           
+             
+                <input type="radio" id="radio9" name="radio"><label for="radio9">    
+                    <a href="../php/sort.php?sort_value=oulu" target="sort_menu">Oulu</a>
+                </label>
+                
+                 <input type="radio" id="radio10" name="radio"><label for="radio10">    
+                    <a href="../php/sort.php?sort_value=romance" target="sort_menu">Romance</a>
+                </label>
+                
+                <input type="radio" id="radio11" name="radio"><label for="radio11">    
+                    <a href="../php/sort.php?sort_value=sci-fi" target="sort_menu">Sci-fi</a>
+                </label>
+            </div>
+        </form>
+        <br>
+        
+        
+       
+        <form>
+            <div id="sort_menu">
+            
+                <!--buttons for sorting in different ways-->
+            
+                <input type="radio" id="sort1" name="sort"><label for="sort1">
+                    <a href="../php/sort.php?sort_value=0" target="sort_menu">Rating</a>
+                </label>
+            
+                <input type="radio" id="sort2" name="sort"><label for="sort2">
+                    <a href="../php/sort.php?sort_value=1" target="sort_menu">Most viewed</a>
+                </label>
+            
+                <input type="radio" id="sort3" name="sort"><label for="sort3">
+                    <a href="../php/sort.php?sort_value=2" target="sort_menu">Newest</a>
+                </label>
+                                   
+                <input type="radio" id="sort4" name="sort"><label for="sort4">
+                    <a href="../php/sort.php?sort_value=4" target="sort_menu">Alphabetical</a>
+                </label>
+            
+                
+            </div>
+        </form>
+    </body>
+</html>

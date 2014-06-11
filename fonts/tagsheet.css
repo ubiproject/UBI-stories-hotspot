@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26.5.2014, 9:11:50
+    Author     : wzuo
+*/
+
+#formsubmit_btn{
+    font-family: "LeagueRegular";
+    border:none;
+    margin-top: 5px;
+    height:40px;
+    width:90px;
+    font-size: 23px;
+    background-color: RGB(240,120,24);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+}
+
+#formsubmit_btn:active{
+    background-color: rgb(240,168,48);
+    
+}

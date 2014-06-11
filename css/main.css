@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+
+/* style of list of stories table */  
+
+#table_cell{
+    font-family: 'LeagueRegular';
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 10px;
+    height: 70px;
+    border: solid 3px;
+    border-color: black;
+    background:rgba(240,168,48, 0.7); 
+    width: 837px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+}
+
+#table_cell1{
+    font-family: 'LeagueRegular';
+    font-size: 50px;
+    text-align: left;
+    height: 70px;
+    width:93px;
+    border: solid 3px;
+    border-color: black;
+    background:rgba(240,168,48, 0.7); 
+ 
+}
+
+/* story heading in a story popup */ 
+#story_head {
+    font-family: 'Arial Narrow';
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing:-2px;
+	/*font-family: 'LeagueRegular';*/
+    text-transform: uppercase;
+    
+}
+
+/* story popup */  
+#storypopup{
+
+	overflow:hidden;
+
+}
+
+#storyframe{
+    font-family: sans-serif;
+    background:rgba(252, 235, 182, 1);
+    padding: 0px;
+	margin-left: 12px; 
+}
+
+/* child popup (tagging) */  
+#tagframe{
+    
+}
+
+/* iframe for list screen (upper) */  
+#content_iframe {
+    height: 500px;
+    width: 925px;
+    overflow: hidden;
+}
+
+/* iframe for tagging screen (bottom)*/  
+#listmenu_iframe {
+    height:90px; 
+    width:925px;
+    overflow: hidden;
+}
+
+#sort_menu{   
+    text-align: center;
+    padding:0px;
+    top: 15px;
+    font-size: 12px;
+    margin-top: 2px;
+    
+}
+
+#sort_menu1{    
+    text-align: center;
+    padding:0px;
+    top: 15px;
+    font-size: 12px;
+    margin-top: 2px;
+    
+}
+
+#radio{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    padding-top: 10px;  
+    
+}
+
+/* what */   
+#story_lists{
+    font:15px arial;
+    text-align:left;
+   
+}
+/* what */  
+#story_lists_story{
+    font:15px arial;
+    text-align:left;   
+}
+
+/* Changes to JQuery elements */
+
+/* .ui-button-text{
+	font-family:"LeagueRegular";
+	text-transform:uppercase;
+	font-size: 16px;
+	background-color:rgb(252, 235, 182);
+} */
+  
+.ui-dialog-titlebar {
+    display:none;
+}
+/* .ui-dialog-buttonpane{
+	font-family:"LeagueRegular";
+    font:15px;
+	background-color: rgb(120,192,168); */
+}
+
+.tb_backforward_menu{
+    width: 870px;
+}
+
+.tb_navigate{
+    width: 435px;
+}
+
+#tb_back{
+    float:right;
+}
+
+/* For previous page and next page buttons */
+
+.btn_next {
+	font-family:"LeagueRegular";
+	text-transform: uppercase;
+	background-color:#78c0a8;
+	text-indent:3.81px;
+	border: none;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:30px;
+	-moz-border-radius-topright:30px;
+	border-top-right-radius:30px;
+	-webkit-border-bottom-right-radius:30px;
+	-moz-border-radius-bottomleft:30px;
+	border-bottom-right-radius:30px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	display:inline-block;
+	color:#000000;
+	font-size:25px;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	width:145px;
+	text-decoration:none;
+	text-align:center;
+}.btn_next:hover {
+	background-color:#000000;
+	color:#78c0a8;
+}.btn_next:active {
+	position:relative;
+	top:1px;
+}
+.btn_prev {
+	font-family:"LeagueRegular";
+	text-transform: uppercase;
+	background-color:#78c0a8;
+	text-indent:3.81px;
+	border: none;
+	-webkit-border-top-left-radius:30px;
+	-moz-border-radius-topleft:30px;
+	border-top-left-radius:30px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:30px;
+	-moz-border-radius-bottomleft:30px;
+	border-bottom-left-radius:30px;
+	display:inline-block;
+	color:#000000;
+	font-size:25px;
+	font-style:normal;
+	height: 45px;
+	line-height:45px;
+	width:145px;
+	text-decoration:none;
+	text-align:center;
+}.btn_prev:hover {
+	background-color:#000000;
+	color:#78c0a8;
+}.btn_prev:active {
+	position:relative;
+	top:1px;
+}
+
+/* Positions back and forward buttons on the listing page*/
+
+.position_btn_list{
+	position: absolute;
+	top: 415px;
+	width: 100%;
+	text-align: center;
+}
+/* Positions back and forward buttons on the story page */
+
+.position_btn_story{
+	position: absolute;
+	top: 430px;
+	width: 100%;
+	text-align: center;	
+}
+ 
+.thanks{
+    font:sans-serif;
+    font-size: 20px;    
+}
+
+/* for info page*/
+#infopic{
+    text-align: center;
+}
+#infodiv{
+    font: sanserif;
+    color: rgba(0,0,0,0.8);
+    background-color: rgb(252, 235, 182);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.infoheader{
+    font-family: 'Arial Narrow';
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing:-2px;
+	/* font-family: 'LeagueRegular'; 
+    font-size: 40px; */
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    
+}
+
+#rating_text{
+	font-family: 'LeagueRegular';
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.buttie{
+    font-family: "LeagueRegular";
+    text-transform: uppercase;
+    border:none;
+    height:30px;
+	margin-left: 5px;
+    width:30px;
+    font-size: 16px;
+    background-color: rgb(240,120,24);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+}
+

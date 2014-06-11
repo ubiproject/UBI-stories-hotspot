@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'LeagueRegular';
+    src: url(../fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: 'LeagueItalic';
+    src: url(../fonts/LeagueGothic-Italic.otf);
+}
+
+@font-face {
+    font-family: 'LeagueConItalic';
+    src: url(../fonts/LeagueGothic-CondensedItalic.otf);
+}
+
+@font-face {
+    font-family: 'LeagueConRegular';
+    src: url(../fonts/LeagueGothic-CondensedRegular.otf);
+}

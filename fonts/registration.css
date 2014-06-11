@@ -1,0 +1,173 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Styling for the mobile registration page
+
+html { 
+    height: 100%; 
+}
+
+body {
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, circle farthest-corner, #F0A830 0%, #F07818 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, circle farthest-corner, #F0A830 0%, #F07818 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 474, color-stop(0, #F0A830), color-stop(1, #F07818));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, circle farthest-corner, #F0A830 0%, #F07818 100%);
+}
+
+#main{
+    border: none;
+    width:220px;
+    margin:50px auto;
+    background-color: #000;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    6px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         6px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+h1{
+    color: #f0a830;
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:LeagueRegular, Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+label, button {
+    font-family:LeagueRegular, Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #f0a830;
+    margin-left: 5px;
+}
+
+.password{
+    float:left;
+    margin:4px 0;
+    font-family:LeagueRegular, Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:1em;
+    color:#fff;
+}
+
+input{
+    background-color:#303030;
+    border-radius: 5px;
+    box-shadow: 0 -1.5px 0 0px #000;	
+    border: none;
+    width:80px;
+    height:18px;	
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.0em;
+    letter-spacing:2px;
+    margin-right: 5px;
+}
+
+.inputbox{
+    float: right;
+}
+
+button{
+    width:90px;
+    height:22px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align:center;
+    border-radius: 5px;
+    border:none;
+    float:right;
+    background: #363535;
+   -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    -webkit-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+    -moz-box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+    box-shadow: 0 0px 1px rgba(255,255,255,0.1);
+    color: #f0a830;
+    text-align:right;
+    font-size: 1.2em;
+}
+
+button:hover{
+    background: #363535;
+ 
+}
+
+button:active{
+    border:none;
+    -webkit-box-shadow: 0 0px 2px rgba(255,255,255,0.2);
+    -moz-box-shadow: 0 0px 2px rgba(255,255,255,0.2);
+    box-shadow: 0 0px 2px rgba(255,255,255,0.2);
+}
+input:focus:required:invalid {
+	color:#000;
+}
+
+.radiob{
+    float:right;
+}
+
+.error_box{
+    text-align: center;
+    color: #f0a830;
+    font-family:LeagueRegular, Helvetica,Arial,sans-serif;
+    padding: 20px;   
+}
+

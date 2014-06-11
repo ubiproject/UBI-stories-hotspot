@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+
+A child popup which is opened inside the story popup 
+
+This page includes the tagging buttons visible to the user after the popup opens
+
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="../css/tagsheet.css">
+        <link href="../css/fonts.css" rel="stylesheet"  type="text/css" charset="utf-8" />
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
+        <!--jquery UI makes the check box buttons without the box-->
+        <script>
+            $(function() {
+                $( "#check" ).button();
+                $( "#format" ).buttonset();
+            });
+        </script>
+        <style>
+            #format { 
+                      text-align: center;}
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <!-- user can select multiple genres and then submit 
+        the data should go to be processed in tagthose.php-->
+        <form id="format" action="../php/tagthose.php" method="get">
+        
+            <input type="checkbox" name = "tag_name[]" id="check1" value="Adventure"><label for="check1">Adventure</label>
+            <input type="checkbox" name = "tag_name[]" id="check2" value="Erotic"><label for="check2">Erotic</label>
+            <input type="checkbox" name = "tag_name[]" id="check3" value="Fairytale"><label for="check3">Fairy tale</label>
+            <input type="checkbox" name = "tag_name[]" id="check4" value="Fantasy"><label for="check4">Fantasy</label>
+            <input type="checkbox" name = "tag_name[]" id="check5" value="Horror"><label for="check5">Horror</label>
+            <input type="checkbox" name = "tag_name[]" id="check6" value="Humor"><label for="check6">Humor</label>
+            <input type="checkbox" name = "tag_name[]" id="check7" value="Mystery"><label for="check7">Mystery</label>
+            <input type="checkbox" name = "tag_name[]" id="check8" value="Oulu"><label for="check8">Oulu</label>
+            <input type="checkbox" name = "tag_name[]" id="check9" value="Romance"><label for="check9">Romance</label>
+            <input type="checkbox" name = "tag_name[]" id="check10" value="Sci-fi"><label for="check10">Scifi</label>
+            <br>
+            <input id="formsubmit_btn" type="Submit" value="Submit">
+            
+        </form>
+    </body>
+</html>
